@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/styles.css" />
 
-    <title>L'ultima Cena Pizzeria! - Create Ingredient</title>
+    <title>L'ultima Cena Pizzeria! - Create Beverage</title>
 </head>
 
 <body>
@@ -49,39 +49,32 @@
     <div class="container">
         <!-- Notification Area -->
 
-        <div id="ingredient-alert" class="alert alert-success" role="alert">
+        <div id="beverage-alert" class="alert alert-success" role="alert">
             <h4 class="alert-heading">Great!</h4>
-            <p>Your ingredient was updated successfully</p>
+            <p>Your beverage was accepted successfully</p>
         </div>
 
         <div class="jumbotron">
-            <h2 class="text-center">Update Ingredient!</h2>
+            <h2 class="text-center">Add new beverage!</h2>
 
-            <form id="ingredient-form">
-                <!-- INGREDIENT DATA -->
-
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">ID: </label>
-                    <div class="col-sm-10">
-                        <input id="_id" disabled name="_id" type="text" class="form-control" placeholder="ID" />
-                    </div>
-                </div>
+            <form id="beverage-form">
+                <!-- BEVERAGE DATA -->
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Name: </label>
                     <div class="col-sm-10">
-                        <input id="name" required name="name" type="text" class="form-control" placeholder="Name" />
+                        <input required name="name" type="text" class="form-control" placeholder="Name" />
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Price: </label>
                     <div class="col-sm-10">
-                        <input id="price" required name="price" type="number" step="0.01" min="0" max="10" class="form-control" placeholder="Price" />
+                        <input required name="price" type="number" step="0.01" min="0" max="10" class="form-control" placeholder="Price" />
                     </div>
                 </div>
 
-                <!-- ingredient BUTTON -->
+                <!-- beverage BUTTON -->
 
                 <div class="text-center">
                     <button type="submit" class="btn btn-warning btn-lg">Submit</button>
@@ -98,7 +91,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.js" integrity="sha256-ILqMXUXPam8LdBwbq5W6r1m0NxeP8ydLFqrYN+bMCeI=" crossorigin="anonymous"></script>
 
-    <script src="/js/ingredient/update-ingredient.js"></script>
+    <script src="/js/beverage/add-beverage.js"></script>
 </body>
 
 </html>
