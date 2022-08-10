@@ -98,14 +98,14 @@
               <p id="size">{{size.name}} - ${{size.price}}</p>
             </td>
             <td id="ingredients">
-              {{#detail}}
-              <p>{{ingredient.name}} - ${{ingredient_price}}</p>
-              {{/detail}}
+              {{#ingredients}}
+              <p>{{name}} - ${{price}}</p>
+              {{/ingredients}}
             </td>
             <td id="beverages">
-              {{#detail}}
-              <p>{{beverage.name}} - ${{beverage_price}}</p>
-              {{/detail}}
+              {{#beverages}}
+              <p>{{name}} - ${{price}}</p>
+              {{/beverages}}
             </td>
           </tr>
           <tr class="table-active">
