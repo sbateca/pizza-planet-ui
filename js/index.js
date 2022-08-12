@@ -99,20 +99,24 @@ function fetchOrderSizes() {
         });
 }
 
+
 function createIngredientTemplate(ingredient) {
     let template = $("#ingredients-template")[0].innerHTML;
     return Mustache.render(template, ingredient);
 }
+
 
 function createBeverageTemplate(beverage) {
     let template = $("#beverages-template")[0].innerHTML;
     return Mustache.render(template, beverage);
 }
 
+
 function createSizeTemplate(size) {
     let template = $("#sizes-template")[0].innerHTML;
     return Mustache.render(template, size);
 }
+
 
 function loadInformation() {
     fetchIngredients();
