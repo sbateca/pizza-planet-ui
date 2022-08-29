@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:5000/order/report/highest-earning-month')
+fetch('http://127.0.0.1:5000/report/highest-earning-month')
     .then(response => response.json())
     .then(month => {
         months = new Array();

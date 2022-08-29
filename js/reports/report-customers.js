@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:5000/order/report/best-three-customers')
+fetch('http://127.0.0.1:5000/report/best-three-customers')
     .then(response => response.json())
     .then(customers => {
         let rows = customers.map(element => createReportCustomerTemplate(element));
